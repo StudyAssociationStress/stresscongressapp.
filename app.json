@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "Stress Congress",
+    "slug": "stress-congress",
+    "owner": "own.professionals",
+    "version": "1.0.0",
+    "platforms": ["ios", "android", "web"],
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "stresscongress",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.stresscongress.app2026",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan attendee QR codes for check-in."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f78f1e",
+        "foregroundImage": "./assets/images/icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.stresscongress.app2026",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#f78f1e"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Stress Congress to access your camera to scan attendee QR codes."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Stress Congress to access your photo library to upload speaker and company images."
+        }
+      ],
+      "expo-image",
+      "expo-sharing",
+      "expo-status-bar",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#0c0057",
+          "sounds": [],
+          "mode": "production"
+        }
+      ]
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
