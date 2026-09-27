@@ -1,0 +1,72 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# ─── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+
+# ─── Environment / secrets — NEVER commit these ──────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# ─── Compiled server output (rebuilt on Railway via `npm run server:build`) ───
+server_dist/
+
+# ─── Expo / React Native ──────────────────────────────────────────────────────
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# ─── Native build artifacts ───────────────────────────────────────────────────
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+/ios
+/android
+
+# ─── Metro bundler ────────────────────────────────────────────────────────────
+.metro-health-check*
+.expo-dev-url
+
+# ─── Debug logs ───────────────────────────────────────────────────────────────
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# ─── OS artefacts ─────────────────────────────────────────────────────────────
+.DS_Store
+*.pem
+Thumbs.db
+
+# ─── TypeScript ───────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── Local development internals ─────────────────────────────────────────────
+.local/
+.agents/
+.cache/
+.replit
+
+# Generated mobile bundles are created by the Railway build.
+static-build/
+
+# Locally assembled release handoff archives.
+release/
+
+# ─── Misc ─────────────────────────────────────────────────────────────────────
+app-example
+
+# Local QA captures and one-off data exports
+screenshots/
+test-results/
+playwright-report/
+SEED_*.sql
+*.tar.gz
+invoice-*.html
+docs/invoice-*.html

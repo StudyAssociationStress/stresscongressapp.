@@ -1,0 +1,19 @@
+# Dependencies and generated/local artifacts
+node_modules/
+.cache/
+.config/
+.expo/
+.upm/
+server_dist/
+static-build/
+test-results/
+dist/
+web-build/
+
+# Binary and imported assets
+attached_assets/
+assets/
+
+# Generated or data-only files
+migrations/
+SEED_ATTENDEES.sql
