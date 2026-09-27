@@ -1,0 +1,2 @@
+ALTER TABLE events
+ADD COLUMN IF NOT EXISTS logo_shape TEXT NOT NULL DEFAULT 'square';
