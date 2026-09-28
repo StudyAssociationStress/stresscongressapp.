@@ -77,9 +77,9 @@ function clearMetroCache() {
   console.log("Clearing Metro cache...");
 
   const cacheDirs = [
-    ...fs.globSync(".metro-cache"),
-    ...fs.globSync("node_modules/.cache/metro"),
-  ];
+  ".metro-cache",
+  path.join("node_modules", ".cache", "metro"),
+];
 
   for (const dir of cacheDirs) {
     fs.rmSync(dir, { recursive: true, force: true });
