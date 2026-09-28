@@ -2,6 +2,9 @@
   "name": "my-app",
   "main": "client/index.js",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20.19.4"
+  },
   "scripts": {
     "expo:dev": "node scripts/expo-preflight.js && EXPO_UNSTABLE_HEADLESS=1 EXPO_PREVIEW_WEB=1 EXPO_PUBLIC_PREVIEW_WEB=1 EXPO_PUBLIC_API_URL=${EXPO_PUBLIC_API_URL:-http://localhost:5000} npx expo start --clear --web --localhost --port 8082",
     "expo:dev:mobile": "EXPO_UNSTABLE_HEADLESS=1 EXPO_PUBLIC_API_URL=${EXPO_PUBLIC_API_URL:-http://localhost:5000} node scripts/expo-mobile-dev.js",
